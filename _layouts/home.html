@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<section class="section__home">
+  <div class="home__wrapper">
+    <h1 class="book__title">
+      {% if page.book_title %} {{ page.book_title }} {% else %} {{ site.title }} {% endif %} 
+    </h1>
+    <p class="book__author">
+       by <span class="author">{{ page.team }} </span>
+    </p>
+  </div>
+</section>
+<section class="intro">
+  <div class="container">
+    {{content}}
+  </div>
+</section>
