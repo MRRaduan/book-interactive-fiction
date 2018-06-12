@@ -45,11 +45,12 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
+
+"minima/colors",
    "minima/base",
   "minima/layout",
   "minima/syntax-highlighting",
   // Book
 "minima/reset",
-"minima/colors",
   "minima/home"
 ;
