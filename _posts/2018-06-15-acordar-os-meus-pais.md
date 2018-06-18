@@ -1,6 +1,7 @@
 ---
 layout: chapter
-title:  "Chapter 2"
+title:  "Acordar os meus pais"
+chapter: "Capítulo 2"
 date:   2018-05-15 23:21:49 -0300
 categories: jekyll update
 ---
@@ -9,8 +10,8 @@ categories: jekyll update
 
 
 
-## Capítulo 2
-# Acordar os meus pais
+## {{ page.chapter }}
+# {{ page.title }} 
 
 Eu estava acordado demais para simplesmente ignorar aquele barulho enorme, mas era perigoso demais sair andando lá fora sozinho. Escorreguei para fora da cama, coloquei meus chinelos e fui devagarinho pela casa, abrindo tudo com cuidado, se tivesse alguém lá fora, não queria que me escutassem. 
 
