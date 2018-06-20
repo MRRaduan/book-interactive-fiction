@@ -1,5 +1,7 @@
 window.addEventListener("DOMContentLoaded", function() {
 
+  let scroll = new SmoothScroll();
+
   function wrapChars(str, tmpl) {
     let wrapTxt = str.replace(/\w/g, tmpl || "<span class='letter'>$&</span>");
   	return wrapTxt;
@@ -17,6 +19,28 @@ window.addEventListener("DOMContentLoaded", function() {
       opacity: [0,1],
       easing: 'easeInOutQuad',
       duration: 2250,
+      delay: function(el, i) {
+        return 150 * (i+1)
+      }
+    }).add({
+      targets: '.letter',
+      opacity: [1,0],
+      easing: 'easeInOutQuad',
+      duration: 1125,
+      delay: function(el, i) {
+        return 90 * (i+1)
+      },
+      complete: function(anim) {
+        let anchor = document.querySelector('#intro');
+        scroll.animateScroll(anchor, {
+          speed: 5000,
+        });
+      }
+    }).add({
+      targets: '.letter',
+      opacity: [0,1],
+      easing: 'easeInOutQuad',
+      duration: 5000,
       delay: function(el, i) {
         return 150 * (i+1)
       }
