@@ -2,7 +2,7 @@
 layout: home
 author_j: Jonas Custódio
 author_m: Matheus Raduan
-book_title: Emboscada da noite
+book_title: A sinister title
 team: Dream Team
 ---
 

@@ -1,6 +1,9 @@
 window.addEventListener("DOMContentLoaded", function() {
 
-  let scroll = new SmoothScroll();
+  let scroll = new SmoothScroll({
+    updateURL: false,
+    speed: 3000
+  });
 
   function wrapChars(str, tmpl) {
     let wrapTxt = str.replace(/\w/g, tmpl || "<span class='letter'>$&</span>");
@@ -33,7 +36,8 @@ window.addEventListener("DOMContentLoaded", function() {
        complete: function(anim) {
          let anchor = document.querySelector('#intro');
         scroll.animateScroll(anchor, {
-          speed: 5000,
+          speel: 3500,
+          updateURL: false
         });
        }
     });
