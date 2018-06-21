@@ -30,20 +30,12 @@ window.addEventListener("DOMContentLoaded", function() {
       delay: function(el, i) {
         return 90 * (i+1)
       },
-      complete: function(anim) {
-        let anchor = document.querySelector('#intro');
+       complete: function(anim) {
+         let anchor = document.querySelector('#intro');
         scroll.animateScroll(anchor, {
           speed: 5000,
         });
-      }
-    }).add({
-      targets: '.letter',
-      opacity: [0,1],
-      easing: 'easeInOutQuad',
-      duration: 5000,
-      delay: function(el, i) {
-        return 150 * (i+1)
-      }
+       }
     });
   
 });
