@@ -1,8 +1,8 @@
 // Home
-body {
+// body {
   // border: solid 10px $primaryColor;
-  background-color: #070707;
-}
+  // background-color: #070707;
+// }
 .section__home {
   width: 100%;
   height: 100vh;
@@ -50,8 +50,8 @@ body {
 
 
 h1{
-  // color: $secondaryColor;
-  color: #fff;
+  color: $secondaryColor;
+ // color: #fff;
   font-family: 'Cormorant', serif;
   letter-spacing: -0.04em;
   font-size: calc( 3em + (7.25 - 3) * ( (100vw - 35em) / ( 100 - 20) ));
@@ -64,14 +64,14 @@ h1{
 
 
 h2{
-  // color: $secondaryColor;
-  color: #fff;
+   color: $secondaryColor;
+   // color: #fff;
   font-family: 'Cormorant SC', serif;
   letter-spacing: -0.04em;
   // font-size: calc( 0.875em + (11.25 - 0.875) * ( (100vw - 20em) / ( 100 - 20) ));
   font-size: 2em;
-  // border-bottom: 0.05em solid rgba(191, 3, 3, 0.9);
-  border-bottom: 0.05em solid rgba(255, 255, 255, 0.9);
+   border-bottom: 0.05em solid rgba(191, 3, 3, 0.9);
+ //  border-bottom: 0.05em solid rgba(255, 255, 255, 0.9);
   min-height: 1.5em;
   margin: 6.5em 0 0 0;
   text-align: center;
@@ -79,8 +79,8 @@ h2{
 
 p {
   font-family: 'Libre Baskerville', serif;
-  // color: $black;
-   color: #bdbdbd;
+   color: $black;
+  // color: #bdbdbd;
   margin-top: 15px;
   line-height: 26px;
   margin: 2em 0;

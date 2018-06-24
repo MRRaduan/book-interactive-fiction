@@ -40,6 +40,14 @@ window.addEventListener("DOMContentLoaded", function() {
           updateURL: false
         });
        }
+    }).add({
+      targets: '.letter',
+      opacity: [0,1],
+      easing: 'easeInOutQuad',
+      duration: 5000,
+      delay: function(el, i) {
+        return 150 * (i+1)
+      }
     });
   
 });
