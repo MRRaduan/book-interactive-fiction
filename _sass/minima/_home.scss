@@ -6,15 +6,25 @@
 .section__home {
   width: 100%;
   height: 100vh;
-   // background-color: $primaryColor;
+  // background-color: $primaryColor;
   background: url('bg-home.png') no-repeat center center;
- // background-attachment: fixed;
- background-size: cover;
+  // background-attachment: fixed;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   filter: grayscale(100%);
+}
+
+.section__home__lent {
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: 99;
 }
 
 .book__title {
