@@ -2,7 +2,7 @@
 layout: home
 author_j: Jonas Custódio
 author_m: Matheus Raduan
-book_title: A sinister title
+book_title: Estranhas possibilidades
 team: Dream Team
 ---
 
