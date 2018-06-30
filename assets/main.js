@@ -18,17 +18,24 @@ window.addEventListener("DOMContentLoaded", function() {
   
   anime.timeline()
      .add({
-      targets: '.section__home__lent',
-     opacity: [1,0],
+      targets: '.section__home__revealer',
       easing: 'easeInOutQuad',
-      duration: 7000,
+      translateY: '-100%',
+      duration: 750,
+     }).add({
+      targets: '.section__home',
+      easing: 'easeInOutQuad',
+      translateY: ['50%','0%'],
+      opacity: ['0','1'],
+      duration: 700,
+      offset: '-=200'
      })
     .add({
       targets: '.letter',
       opacity: [0,1],
       easing: 'easeInOutQuad',
-      duration: 2250,
-      offset: '-=3500',
+      duration: 1250,
+      offset: '-=1200',
       delay: function(el, i) {
         return 150 * (i+1)
       }
@@ -36,7 +43,7 @@ window.addEventListener("DOMContentLoaded", function() {
       targets: '.letter',
       opacity: [1,0],
       easing: 'easeInOutQuad',
-      duration: 1125,
+      duration: 750,
       delay: function(el, i) {
         return 90 * (i+1)
       },

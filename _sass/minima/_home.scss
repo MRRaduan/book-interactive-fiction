@@ -6,26 +6,39 @@
 .section__home {
   width: 100%;
   height: 100vh;
-  // background-color: $primaryColor;
-  background: url('bg-home.png') no-repeat center center;
+  background-color: $primaryColor;
+  // background: url('bg-home.png') no-repeat center center;
   // background-attachment: fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  filter: grayscale(100%);
+  // filter: grayscale(100%);
+  &:after {
+    content: '';
+    display: block;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    width: 100%;
+    height: 90%;
+    border: solid #fff 1px;
+    position: absolute;
+  }
 }
 
-.section__home__lent {
-  background-color: #000;
-  width: 100%;
-  height: 100vh;
+.section__home__revealer {
   position: absolute;
   top: 0;
-  left:0;
   z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
 }
+
+// .home__wrapper {
+//   transform: translateY(50%);
+// }
 
 .book__title {
   text-align: center;
