@@ -10,46 +10,58 @@ window.addEventListener("DOMContentLoaded", function() {
   	return wrapTxt;
   }
   
-  titleTag = document.querySelector('.book__title');
-  titleTag.innerHTML = wrapChars(titleTag.innerHTML);
-
-  authorTag = document.querySelector('.book__author');
-  authorTag.innerHTML = wrapChars(authorTag.innerHTML);
-  
-  anime.timeline()
-    .add({
-      targets: '.letter',
-      opacity: [0,1],
-      easing: 'easeInOutQuad',
-      duration: 1250,
-      // offset: '-=1200',
-      delay: function(el, i) {
-        return 150 * (i+1)
-      }
-    }).add({
-      targets: '.letter',
-      opacity: [1,0],
-      easing: 'easeInOutQuad',
-      duration: 750,
-      delay: function(el, i) {
-        return 90 * (i+1)
-      },
-       complete: function(anim) {
-         let anchor = document.querySelector('#intro');
-        scroll.animateScroll(anchor, {
-          speel: 3500,
-          updateURL: false
-        });
-       }
-    }).add({
-      targets: '.letter',
-      opacity: [0,1],
-      easing: 'easeInOutQuad',
-      duration: 5000,
-      delay: function(el, i) {
-        return 150 * (i+1)
-      }
-    });
+anime.timeline({direction: 'alternate'})
+  .add({
+    targets: '.ml5 .line',
+    opacity: [0.5,1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 700
+  }).add({
+    targets: '.ml5 .line',
+    duration: 600,
+    easing: "easeOutExpo",
+    translateY: function(e, i, l) {
+      var offset = -0.625 + 0.625*2*i;
+      return offset + "em";
+    }
+  }).add({
+    targets: '.ml5 .ampersand',
+    opacity: [0,1],
+    scaleY: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: '.ml5 .letters-left',
+    opacity: [0,1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=300'
+  }).add({
+    targets: '.ml5 .letters-right',
+    opacity: [0,1],
+    translateX: ["-0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=600'
+  }).add({
+    targets: 'book__author',
+    easing: "easeOutExpo",
+    translateY: -50,
+    duration: 600,
+    offset: '-=300',
+    complete: function(anim) {
+      setTimeout(function() {
+        let anchor = document.querySelector('#intro');
+          scroll.animateScroll(anchor, {
+            speel: 3500,
+            updateURL: false
+          });
+      }, );
+    }
+  });
 
 
 	(function() {
@@ -90,10 +102,12 @@ window.addEventListener("DOMContentLoaded", function() {
 			}, 2000);
 
 			setTimeout(function() {
-				lineMaker.createLine({top: '50vh', left: '21vw', width: '60vw', height: 16, color: '#E91E63', hidden: true, animation: { duration: 1000, easing: 'easeInOutExpo', delay: 300, direction: 'LeftRight' }});
-				
-				// lineMaker.animateLineIn(8);
-			}, 2000);
+        lineMaker.createLine({top: '40vh', left: '21vw', width: '60vw', height: 100, color: '#fff', hidden: true, animation: { duration: 1000, easing: 'easeInOutExpo', delay: 300, direction: 'LeftRight' }});
+
+        lineMaker.animateLineIn(8);
+
+      }, 2000);
+
 		})();
   
 });
