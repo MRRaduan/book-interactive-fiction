@@ -35,6 +35,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     })
     .add({
+      targets: '.section__home',
+      borderRadius: 30,
+      borderWidth: 100,
+      easing: 'easeInOutQuad',
+      duration: 1000,
+      offset: '-=4000'
+    })
+    .add({
       targets: '.letter',
       opacity: [1,0],
       easing: 'easeInOutQuad',
@@ -43,6 +51,14 @@ document.addEventListener("DOMContentLoaded", function() {
         return 90 * (i+1)
       }
        
+    })
+.add({
+      targets: '.section__home',
+      borderRadius: 0,
+      borderWidth: 0,
+      easing: 'easeInOutQuad',
+      duration: 1000,
+      // offset: '-=4000'
     })
       .add({
       targets: '.section__home__revealer',
