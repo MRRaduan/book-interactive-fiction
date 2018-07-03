@@ -2,7 +2,7 @@
 layout: home
 author_j: Jonas Custódio
 author_m: Matheus Raduan
-book_title: A sinister title
+book_title: Sinais e RuÍdos
 team: Dream Team
 ---
 
@@ -29,7 +29,7 @@ minha felicidade quando aconteceu alguma coisa diferente.
 
 
 ## Capítulo I 
-# Nome do capítulo
+# Cainhar da Penumbra
 
 Lembro que era primavera e o inverno já ia longe. O mato estava muito alto ao redor do muro da
 nossa casa e o friozinho da noite era rapidamente substituído por um calor capaz de fritar ovo na sombra,

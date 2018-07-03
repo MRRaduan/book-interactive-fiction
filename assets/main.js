@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
 
   let scroll = new SmoothScroll({
     updateURL: false,
@@ -17,44 +17,62 @@ window.addEventListener("DOMContentLoaded", function() {
   authorTag.innerHTML = wrapChars(authorTag.innerHTML);
   
   anime.timeline()
-     .add({
-      targets: '.section__home__lent',
+    .add({
+      targets: '.section__home__revealer',
       opacity: [1,0],
       easing: 'easeInOutQuad',
-      duration: 7000,
-     })
+      duration: 7000
+    })
     .add({
       targets: '.letter',
       opacity: [0,1],
       easing: 'easeInOutQuad',
-      duration: 2250,
-      offset: '-=3500',
+      duration: 4250,
+      offset: '-=6500',
       delay: function(el, i) {
-        return 150 * (i+1)
-      }
-    }).add({
+        return 275 * (i+1)
+      },
+
+    })
+    .add({
+      targets: '.section__home',
+      borderRadius: 30,
+      borderWidth: 100,
+      easing: 'easeInOutQuad',
+      duration: 1000,
+      offset: '-=4000'
+    })
+    .add({
       targets: '.letter',
       opacity: [1,0],
       easing: 'easeInOutQuad',
       duration: 1125,
       delay: function(el, i) {
         return 90 * (i+1)
-      },
-       complete: function(anim) {
-         let anchor = document.querySelector('#intro');
+      }
+       
+    })
+.add({
+      targets: '.section__home',
+      borderRadius: 0,
+      borderWidth: 0,
+      easing: 'easeInOutQuad',
+      duration: 1000,
+      // offset: '-=4000'
+    })
+      .add({
+      targets: '.section__home__revealer',
+      opacity: [0,1],
+      easing: 'easeInOutQuad',
+      duration: 4250,
+      offset: '-=3200',
+      complete: function(anim) {
+        let anchor = document.querySelector('#intro');
         scroll.animateScroll(anchor, {
           speel: 3500,
           updateURL: false
         });
        }
-    }).add({
-      targets: '.letter',
-      opacity: [0,1],
-      easing: 'easeInOutQuad',
-      duration: 5000,
-      delay: function(el, i) {
-        return 150 * (i+1)
-      }
     });
   
 });
