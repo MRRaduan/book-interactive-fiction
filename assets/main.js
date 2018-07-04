@@ -32,15 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
       delay: function(el, i) {
         return 275 * (i+1)
       },
-
-    })
-    .add({
-      targets: '.section__home',
-      borderRadius: 30,
-      borderWidth: 100,
-      easing: 'easeInOutQuad',
-      duration: 1000,
-      offset: '-=4000'
     })
     .add({
       targets: '.letter',
