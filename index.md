@@ -2,7 +2,7 @@
 layout: home
 author_j: Jonas Custódio
 author_m: Matheus Raduan
-book_title: Sinais e RuÍdos
+book_title: Noite no Interior
 team: Dream Team
 ---
 

@@ -36,3 +36,6 @@ preocupe.
 
 Minha mãe pareceu não se importar com o que tinha acontecido e eu tinha a sensação de que era
 alguma coisa importante. O que eu faço?
+
+- [Alívio]({{site.baseurl}}{% post_url 2018-07-04-curiosidade %})Eu demorei um pouco para pegar no sono, mas peguei no...
+
