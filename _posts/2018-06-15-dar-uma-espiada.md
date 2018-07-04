@@ -32,3 +32,8 @@ fazia aquilo quando queria entrar em casa ou porque estava frio ou por qualquer 
 
 Eu poderia abrir a janela para mandá-lo ir dormir ou poderia descer lá e abrir pra ele entrar e dormir
 na cozinha, mas o que eu fiz mesmo...?
+
+
+- [Cuidado]({{site.baseurl}}{% post_url 2018-07-04-cuidado %})Me aproximei da janela, meus dedos tocaram a madeira fria e subiram pelo...
+
+- [Concessão]({{site.baseurl}}{% post_url 2018-07-04-concessao %})Me aproximei da janela, meus dedos tocaram a madeira fria e subiram pelo...
