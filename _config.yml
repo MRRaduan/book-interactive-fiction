@@ -18,7 +18,7 @@ lang: pt-br
 email: math.raduan@gmail.com
 description: "Esse é um livro interativo online que foi desenvolvido pelos alunos Jonas Custódio e Matheus Raduan
 para a disciplina de Ficção Interativa do curso de Jogos Digitais da Fatec Americana. Feito com muito <amor3, café ☕ e <código/>."
-baseurl: "/book-interactive-fiction" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "/book-interactive-fiction" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: math_raduan
 github_username:  MRRaduan
