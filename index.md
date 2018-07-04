@@ -50,6 +50,4 @@ Mas o que fazer?
 
 - [Acordar os meus pais]({{site.baseurl}}{% post_url 2018-06-15-acordar-os-meus-pais %})Eles poderiam ir lá olhar comigo pra ter certeza de que não é algum ladrão.
 
-- [Voltar a dormir]({% post_url 2018-06-15-voltar-a-dormir %}) Agora está muito escuro e todos estão dormindo, amanhã eu olho, com mais calma.
-
-- [Dar uma espiada](https://google.com) A cortina da janela está fechada, mas eu poderia abrir e dar uma olhada no quintal lá embaixo.
+- [Dar uma espiada]({{site.baseurl}}{% post_url 2018-06-15-dar-uma-espiada %} ) A cortina da janela está fechada, mas eu poderia abrir e dar uma olhada no quintal lá embaixo.
