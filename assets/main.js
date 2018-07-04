@@ -52,14 +52,14 @@ document.addEventListener("DOMContentLoaded", function() {
       }
        
     })
-.add({
-      targets: '.section__home',
-      borderRadius: 0,
-      borderWidth: 0,
-      easing: 'easeInOutQuad',
-      duration: 1000,
-      // offset: '-=4000'
-    })
+    // .add({
+    //     targets: '.section__home',
+    //     borderRadius: 0,
+    //     borderWidth: 0,
+    //     easing: 'easeInOutQuad',
+    //     duration: 1000,
+    //     // offset: '-=4000'
+    //   })
       .add({
       targets: '.section__home__revealer',
       opacity: [0,1],
